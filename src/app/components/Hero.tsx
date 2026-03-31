@@ -27,7 +27,7 @@ export function Hero() {
               {/* Profile image container */}
               <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/10 backdrop-blur-sm">
                 <ImageWithFallback
-                  src="/foto_perfil.jpg"
+                  src={`${import.meta.env.BASE_URL}foto_perfil.jpg`}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -102,21 +102,21 @@ href="#contact"
             <div className="flex gap-4 pt-6">
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                href="#"
+                href="https://github.com/aehenao"
                 className="p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full hover:bg-white/20 transition-colors"
               >
                 <Github className="w-5 h-5" />
               </motion.a>
-              <motion.a
+              {/*<motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 href="#"
                 className="p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full hover:bg-white/20 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
-              </motion.a>
+              </motion.a>*/}
               <motion.a
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                href="#"
+                href="mailto:andrestivenhenao@gmail.com"
                 className="p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-5 h-5" />
