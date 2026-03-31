@@ -4,46 +4,49 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 export function Experience() {
   const experiences = [
     {
-      role: "Director de Tecnología (CTO)",
-      company: "Tech Innovation Corp",
+      role: "Ingeniero de Software Senior / Líder Técnico",
+      company: "Freelance / Consultoría Independiente",
       period: "2022 - Presente",
-      location: "Remote",
-      description: "Liderazgo de la estrategia tecnológica de la empresa, gestión de equipos de desarrollo y implementación de soluciones basadas en IA.",
+      location: "Remoto",
+      description: "Liderazgo de proyectos tecnológicos fullstack, desarrollo de soluciones escalables y optimización de procesos empresariales mediante IA y automatización.",
       achievements: [
-        "Implementación de arquitectura de microservicios que mejoró la escalabilidad en 300%",
-        "Liderazgo de equipo de 15+ desarrolladores",
-        "Desarrollo de plataforma de IA que generó $2M en ingresos anuales",
-        "Reducción de costos operativos en 40% mediante automatización con ML"
+        "Desarrollo de aplicaciones robustas con PHP, JavaScript, Python y Node.js",
+        "Implementación de arquitecturas cloud en AWS y DigitalOcean",
+        "Creación de agentes inteligentes con Dify.ai, Flowise y n8n",
+        "Integración de soluciones RAG con Pinecone y Supabase",
+        "Optimización de procesos empresariales mediante automatización e IA"
       ],
-      technologies: ["Python", "AWS", "Kubernetes", "TensorFlow", "React", "Node.js"]
+      technologies: ["PHP", "JavaScript", "Python", "Node.js", "Laravel", "Vue.js", "React", "AlpineJS", "AWS", "Docker", "PostgreSQL", "Supabase", "Pinecone", "Dify.ai", "Flowise", "n8n"]
     },
     {
-      role: "Senior Software Engineer & AI Lead",
-      company: "AI Solutions Inc",
-      period: "2020 - 2022",
-      location: "San Francisco, CA",
-      description: "Desarrollo de soluciones de IA y liderazgo técnico en proyectos de machine learning y deep learning.",
+      role: "Desarrollador Fullstack",
+      company: "Proyectos Independientes y Colaboraciones",
+      period: "2019 - 2022",
+      location: "Remoto",
+      description: "Desarrollo de aplicaciones web y móviles robustas, intuitivas y de alto rendimiento con enfoque en experiencia de usuario y performance.",
       achievements: [
-        "Desarrollo de sistema de recomendación con ML que aumentó engagement 45%",
-        "Implementación de pipeline de NLP para análisis de sentimientos en tiempo real",
-        "Creación de chatbot con GPT-3 que redujo tickets de soporte en 60%",
-        "Mentoría de 5 desarrolladores junior en técnicas de IA"
+        "Diseño y desarrollo de aplicaciones con Laravel, Vue.js y React",
+        "Levantamiento de requerimientos y análisis funcional detallado",
+        "Creación de diagramas de flujo y mockups para planificación de proyectos",
+        "Implementación de pruebas unitarias y de integración",
+        "Despliegue en servidores Linux y contenedores Docker"
       ],
-      technologies: ["PyTorch", "FastAPI", "PostgreSQL", "Docker", "LangChain", "OpenAI API"]
+      technologies: ["PHP", "Laravel", "Vue.js", "React", "JavaScript", "MySQL", "PostgreSQL", "Docker", "Linux", "Git"]
     },
     {
-      role: "Full Stack Developer",
-      company: "Digital Ventures",
-      period: "2018 - 2020",
-      location: "New York, NY",
-      description: "Desarrollo full stack de aplicaciones web y móviles con enfoque en performance y user experience.",
+      role: "Analista y Desarrollador de Sistemas",
+      company: "Desarrollo de Proyectos Académicos y Personales",
+      period: "2017 - 2019",
+      location: "Remoto",
+      description: "Formación integral en desarrollo de software, algoritmos y arquitectura de sistemas mediante proyectos autodidactas y colaborativos.",
       achievements: [
-        "Desarrollo de 10+ aplicaciones web de alto tráfico",
-        "Implementación de CI/CD que redujo tiempo de deployment en 70%",
-        "Optimización de queries SQL que mejoró performance en 5x",
-        "Migración exitosa de monolito a arquitectura serverless"
+        "Desarrollo de aplicaciones de escritorio y web con Java y Python",
+        "Implementación de bases de datos relacionales con SQL Server y Oracle",
+        "Creación de herramientas de automatización y procesamiento de datos",
+        "Aprendizaje de metodologías ágiles y Scrum",
+        "Desarrollo de habilidades en resolución de problemas y análisis lógico"
       ],
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB", "AWS Lambda", "GraphQL"]
+      technologies: ["Java", "Python", "SQL Server", "Oracle", "HTML", "CSS", "JavaScript", "Linux"]
     }
   ];
 

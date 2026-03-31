@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navigation } from '../app/components/Navigation';
+import { Hero } from '../app/components/Hero';
+import { About } from '../app/components/About';
+import { Experience } from '../app/components/Experience';
+import { Education } from '../app/components/Education';
+import { Projects } from '../app/components/Projects';
+import { Skills } from '../app/components/Skills';
+import { Contact } from '../app/components/Contact';
+import { Footer } from '../app/components/Footer';
+
+// Use client:load for the navigation and hero since they are at the top and might have initial animations
+// Use client:visible for the rest to optimize the loading and performance (Hydration on demand)
+---
+
+<Layout>
+  <div class="min-h-screen">
+    <Navigation client:load />
+    <Hero client:load />
+    <About client:visible />
+    <Experience client:visible />
+    <Education client:visible />
+    <Projects client:visible />
+    <Skills client:visible />
+    <Contact client:visible />
+    <Footer client:visible />
+  </div>
+</Layout>

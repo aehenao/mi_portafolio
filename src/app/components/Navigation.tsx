@@ -96,7 +96,7 @@ className={`font-semibold transition-colors ${
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => setIsOpen(false)}
-                className="block py-3 text-gray-700 font-semibold hover:text-purple-600 transition-colors border-b border-gray-100 last:border-0"
+                className="block py-3 text-gray-700 font-semibold hover:text-blue-600 transition-colors border-b border-gray-100 last:border-0"
               >
                 {link.label}
               </motion.a>

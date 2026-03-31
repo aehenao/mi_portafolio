@@ -1,0 +1,104 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title = "Ingeniero de Software Fullstack | Portfolio Profesional",
+  description = "Ingeniero de Software Fullstack orientado a resultados con experiencia en desarrollo fullstack, IA aplicada al negocio, automatización con Dify.ai y n8n, y liderazgo de proyectos tecnológicos. Especializado en PHP, JavaScript, Python, Node.js, Laravel, Vue.js, React y soluciones cloud en AWS y DigitalOcean.",
+  image = "/og-image.jpg",
+  canonicalURL = Astro.url.href,
+} = Astro.props;
+
+const siteName = "Portfolio Profesional | Andres Henao";
+const author = "Andres Henao";
+
+// JSON-LD data for SEO
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": author,
+  "jobTitle": "Ingeniero de Software Fullstack",
+  "url": Astro.site ? Astro.site.toString() : "https://aehenao.com",
+  "sameAs": [
+    "https://github.com/tu-usuario",
+    "https://linkedin.com/in/tu-usuario"
+  ],
+  "description": description,
+  "knowsAbout": [
+    "PHP", "JavaScript", "Python", "Node.js", "Laravel", "Vue.js", "React", "IA aplicada al negocio", "Dify.ai", "n8n", "Automatización", "AWS", "DigitalOcean", "Docker", "PostgreSQL", "Liderazgo de proyectos", "Arquitectura cloud"
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+    <!-- SEO Technical -->
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="keywords" content="Ingeniero de Software, Desarrollador Fullstack, PHP, JavaScript, Python, Node.js, Laravel, Vue.js, React, IA aplicada al negocio, Dify.ai, n8n, Automatización, AWS, DigitalOcean, Docker, PostgreSQL, Liderazgo de proyectos, Arquitectura cloud" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="/src/styles/tailwind.css" />
+    <link rel="stylesheet" href="/src/styles/fonts.css" />
+    <link rel="stylesheet" href="/src/styles/theme.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+  </head>
+  <body class="bg-background text-foreground selection:bg-primary/20">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+  }
+</style>

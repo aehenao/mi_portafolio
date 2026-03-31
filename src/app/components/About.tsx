@@ -5,26 +5,26 @@ export function About() {
   const highlights = [
     {
       icon: Brain,
-      title: "Experto en IA",
-      description: "Especializado en Machine Learning, Deep Learning y LLMs",
+      title: "Inteligencia Artificial",
+      description: "Experiencia en agentes inteligentes, RAG, automatizaciones con Dify.ai, Flowise y n8n",
       color: "from-purple-500 to-blue-500"
     },
     {
       icon: Code,
-      title: "Full Stack",
-      description: "Desarrollo completo de aplicaciones web y móviles",
+      title: "Desarrollo Fullstack",
+      description: "Experiencia con PHP, JavaScript, Python, Node.js, Laravel, Vue.js, React y AlpineJS",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Rocket,
-      title: "Liderazgo Técnico",
-      description: "Dirección de equipos y estrategia tecnológica",
+      title: "Liderazgo de Proyectos",
+      description: "Levantamiento de requerimientos, análisis funcional, planificación con Gantt y cronogramas",
       color: "from-orange-500 to-red-500"
     },
     {
       icon: Sparkles,
-      title: "Innovación",
-      description: "Implementación de soluciones cutting-edge",
+      title: "Infraestructura Cloud",
+      description: "Experiencia con AWS, DigitalOcean, Docker, Linux, Proxmox y virtualización",
       color: "from-green-500 to-emerald-500"
     }
   ];
@@ -43,10 +43,9 @@ export function About() {
 <h2 className="text-4xl md:text-5xl font-bold mb-4">
                Sobre <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Mí</span>
              </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Apasionado por la tecnología y la inteligencia artificial, con una visión estratégica 
-              para liderar proyectos innovadores que generan impacto real.
-            </p>
+<p className="text-xl text-gray-600 max-w-3xl mx-auto">
+               Ingeniero de Software Fullstack orientado a resultados, con experiencia liderando proyectos tecnológicos y construyendo soluciones escalables que optimizan procesos empresariales.
+             </p>
           </motion.div>
 
           {/* Highlights Grid */}
@@ -88,35 +87,35 @@ export function About() {
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 bg-white/20 backdrop-blur-sm rounded-xl">
-                  <Brain className="w-8 h-8" />
-                </div>
-                <h3 className="text-3xl font-bold">Especialización en Inteligencia Artificial</h3>
-              </div>
+<div className="flex items-center gap-3 mb-6">
+                 <div className="p-3 bg-white/20 backdrop-blur-sm rounded-xl">
+                   <Brain className="w-8 h-8" />
+                 </div>
+                 <h3 className="text-3xl font-bold">Ingeniería de Software y Tecnología</h3>
+               </div>
               
               <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="text-xl font-semibold mb-3">Experiencia en IA</h4>
-                  <ul className="space-y-2 text-purple-100">
-                    <li className="flex items-start gap-2">
-                      <span className="text-pink-400 mt-1">▸</span>
-                      <span>Desarrollo e implementación de modelos de Machine Learning</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-pink-400 mt-1">▸</span>
-                      <span>Integración de Large Language Models (GPT, Claude, Llama)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-pink-400 mt-1">▸</span>
-                      <span>Computer Vision y procesamiento de imágenes</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-pink-400 mt-1">▸</span>
-                      <span>NLP y análisis de sentimientos</span>
-                    </li>
-                  </ul>
-                </div>
+<div>
+                   <h4 className="text-xl font-semibold mb-3">Especializaciones Técnicas</h4>
+                   <ul className="space-y-2 text-purple-100">
+                     <li className="flex items-start gap-2">
+                       <span className="text-pink-400 mt-1">▸</span>
+                       <span>Desarrollo de agentes inteligentes con Dify.ai, Flowise y n8n</span>
+                     </li>
+                     <li className="flex items-start gap-2">
+                       <span className="text-pink-400 mt-1">▸</span>
+                       <span>Soluciones RAG con Pinecone y Supabase</span>
+                     </li>
+                     <li className="flex items-start gap-2">
+                       <span className="text-pink-400 mt-1">▸</span>
+                       <span>Desarrollo backend con Python, Node.js y PHP</span>
+                     </li>
+                     <li className="flex items-start gap-2">
+                       <span className="text-pink-400 mt-1">▸</span>
+                       <span>Frontend moderno con React, Vue.js y AlpineJS</span>
+                     </li>
+                   </ul>
+                 </div>
 
                 <div>
                   <h4 className="text-xl font-semibold mb-3">Tecnologías IA</h4>

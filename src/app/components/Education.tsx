@@ -4,54 +4,43 @@ import { GraduationCap, Award, BookOpen } from "lucide-react";
 export function Education() {
   const education = [
     {
-      degree: "Maestría en Inteligencia Artificial",
-      institution: "Universidad de Tecnología Avanzada",
-      period: "2018 - 2020",
-      description: "Especialización en Deep Learning, Computer Vision y Natural Language Processing.",
+      degree: "Ingeniería de Sistemas",
+      institution: "Universidad Tecnológica",
+      period: "2015 - 2020",
+      description: "Formación integral en desarrollo de software, algoritmos, arquitecturas de sistemas y bases de datos.",
       highlights: [
-        "Tesis: 'Optimización de Redes Neuronales para Procesamiento en Tiempo Real'",
-        "GPA: 3.9/4.0",
-        "Investigación publicada en conferencia internacional de IA"
-      ]
-    },
-    {
-      degree: "Ingeniería en Sistemas Computacionales",
-      institution: "Instituto Tecnológico Superior",
-      period: "2014 - 2018",
-      description: "Formación integral en desarrollo de software, algoritmos y arquitectura de sistemas.",
-      highlights: [
-        "Graduado con honores (Top 5% de la clase)",
-        "Proyecto final: Sistema de recomendación basado en ML",
-        "Presidente del club de programación competitiva"
+        "Graduado con honores académicos",
+        "Proyecto final: Sistema de gestión empresarial fullstack",
+        "Participación activa en competencias de programación"
       ]
     }
   ];
-
+  
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect - Professional",
+      name: "Fundamentos de AWS Cloud Practitioner",
       issuer: "Amazon Web Services",
       year: "2023"
     },
     {
-      name: "TensorFlow Developer Certificate",
-      issuer: "Google",
+      name: "Especialización en Desarrollo Web Fullstack",
+      issuer: "Coursera",
       year: "2022"
     },
     {
-      name: "Professional Scrum Master (PSM I)",
-      issuer: "Scrum.org",
+      name: "Certificado en Inteligencia Artificial Aplicada",
+      issuer: "IBM",
       year: "2021"
     },
     {
-      name: "Deep Learning Specialization",
-      issuer: "DeepLearning.AI - Coursera",
+      name: "Fundamentos de Bases de Datos Relacionales",
+      issuer: "Oracle",
       year: "2020"
     },
     {
-      name: "Full Stack Web Development",
-      issuer: "Meta",
-      year: "2019"
+      name: "Aprendizaje Activo en Rust (~15% completado)",
+      issuer: "Autoestudio / Rust Lang Book",
+      year: "2024 - Presente"
     }
   ];
 

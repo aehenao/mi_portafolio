@@ -1,100 +1,100 @@
 import { motion } from "motion/react";
-import { ExternalLink, Github, Brain, MessageSquare, Image, TrendingUp, Shield, Zap } from "lucide-react";
+import { ExternalLink, Github, Brain, MessageSquare, Image, TrendingUp, Shield, Zap, Code2, Database, Cloud, Layers, Smartphone } from "lucide-react";
 
 export function Projects() {
   const projects = [
     {
-      title: "AI Chat Platform",
+      title: "Plataforma de Agentes Inteligentes",
       category: "Inteligencia Artificial",
-      description: "Plataforma conversacional empresarial potenciada por GPT-4 con integración de knowledge bases personalizadas y análisis de sentimientos en tiempo real.",
+      description: "Sistema de agentes IA usando Dify.ai y Flowise para automatización de procesos empresariales, integración con bases de conocimiento y respuestas contextualizadas.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop",
-      technologies: ["Python", "LangChain", "OpenAI API", "React", "FastAPI", "PostgreSQL"],
-      icon: MessageSquare,
+      technologies: ["Dify.ai", "Flowise", "n8n", "Supabase", "Pinecone", "JavaScript"],
+      icon: Brain,
+      color: "from-indigo-500 to-blue-500",
+      highlights: [
+        "Automatización de atención al cliente",
+        "Integración con CRM empresarial",
+        "Reducción del 40% en tiempo de respuesta"
+      ],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Sistema de Gestión Empresarial Fullstack",
+      category: "Desarrollo Web",
+      description: "Aplicación completa para gestión de inventario, ventas y clientes construida con Laravel, Vue.js y PostgreSQL, desplegada en AWS.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
+      technologies: ["Laravel", "Vue.js", "PHP", "PostgreSQL", "AWS", "Docker"],
+      icon: Code2,
       color: "from-blue-500 to-cyan-500",
       highlights: [
-        "10,000+ usuarios activos mensuales",
-        "99.9% uptime",
-        "Procesamiento de 1M+ mensajes/mes"
+        "Gestión de inventario en tiempo real",
+        "Reportes y analíticas avanzadas",
+        "Despliegue en infrastructure cloud"
       ],
       github: "#",
       demo: "#"
     },
     {
-      title: "Computer Vision Analytics",
-      category: "Deep Learning",
-      description: "Sistema de análisis de video en tiempo real usando YOLO y CNN para detección de objetos, seguimiento y análisis de comportamiento en retail.",
-      image: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=800&auto=format&fit=crop",
-      technologies: ["PyTorch", "OpenCV", "YOLO", "TensorFlow", "AWS SageMaker", "Redis"],
-      icon: Image,
-      color: "from-purple-500 to-blue-500",
-      highlights: [
-        "Precisión del 95% en detección",
-        "Procesamiento de 30 FPS",
-        "Deployed en 50+ tiendas"
-      ],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Predictive Analytics Engine",
-      category: "Machine Learning",
-      description: "Motor de predicción para e-commerce que anticipa comportamiento de compra y optimiza inventario usando modelos de serie temporal y clasificación.",
+      title: "API RESTful para Aplicaciones Móviles",
+      category: "Backend Development",
+      description: "Interfaz de programación de aplicaciones robusta y segura construida con Node.js, Express y MongoDB, incluyendo autenticación JWT y documentación Swagger.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-      technologies: ["scikit-learn", "XGBoost", "pandas", "Apache Airflow", "Docker", "MongoDB"],
-      icon: TrendingUp,
-      color: "from-orange-500 to-red-500",
-      highlights: [
-        "ROI de 250% en primer año",
-        "Reducción de 35% en stock muerto",
-        "Predicciones con 87% de precisión"
-      ],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "NLP Sentiment Analyzer",
-      category: "Natural Language Processing",
-      description: "Herramienta de análisis de sentimientos multilingüe para redes sociales con clasificación de emociones y extracción de insights.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-      technologies: ["Transformers", "BERT", "Hugging Face", "Flask", "Elasticsearch", "Kubernetes"],
-      icon: Brain,
+      technologies: ["Node.js", "Express", "MongoDB", "JWT", "Swagger", "Docker"],
+      icon: Database,
       color: "from-green-500 to-emerald-500",
       highlights: [
-        "Soporte para 15+ idiomas",
-        "Análisis de 100K+ posts/día",
-        "Dashboard en tiempo real"
+        "Arquitectura escalable y modular",
+        "Documentación automática de endpoints",
+        "Optimización de consultas a base de datos"
       ],
       github: "#",
       demo: "#"
     },
     {
-      title: "Cybersecurity AI Suite",
-      category: "AI Security",
-      description: "Suite de seguridad con detección de anomalías usando ML, identificación de amenazas en tiempo real y respuesta automatizada.",
+      title: "Sistema de Automatización de Procesos",
+      category: "Infraestructura & DevOps",
+      description: "Flujos de trabajo automatizados usando n8n para sincronización de datos entre aplicaciones, generación de reportes y notificaciones inteligentes.",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop",
-      technologies: ["TensorFlow", "Keras", "Splunk", "ELK Stack", "AWS Lambda", "Python"],
-      icon: Shield,
-      color: "from-red-500 to-blue-500",
+      technologies: ["n8n", "PostgreSQL", "API REST", "Linux", "Cron", "JavaScript"],
+      icon: Cloud,
+      color: "from-orange-500 to-red-500",
       highlights: [
-        "Detección de amenazas en <1s",
-        "Reducción de 60% en falsos positivos",
-        "Protección de 500+ endpoints"
+        "Integración de múltiples sistemas",
+        "Ejecución programada de tareas",
+        "Monitoreo y alertas en tiempo real"
       ],
       github: "#",
       demo: "#"
     },
     {
-      title: "Real-time Recommendation System",
-      category: "Machine Learning",
-      description: "Sistema de recomendación híbrido usando collaborative filtering y deep learning para personalización en tiempo real.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
-      technologies: ["PyTorch", "Redis", "Kafka", "Spark", "Neo4j", "GraphQL"],
-      icon: Zap,
+      title: "Aplicación de Análisis de Sentimientos",
+      category: "Data & Analytics",
+      description: "Herramienta para análisis de opiniones en redes sociales usando técnicas de NLP y visualización interactiva de resultados.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
+      technologies: ["Python", "NLTK", "TextBlob", "Chart.js", "HTML/CSS", "Flask"],
+      icon: Layers,
       color: "from-yellow-500 to-orange-500",
       highlights: [
-        "Aumento de 45% en engagement",
-        "Latencia <50ms",
-        "CTR mejorado en 35%"
+        "Procesamiento de texto en múltiples idiomas",
+        "Visualización de tendencias temporales",
+        "Exportación de reportes en diversos formatos"
+      ],
+      github: "#",
+      demo: "#"
+    },
+    {
+      title: "Aprendizaje y Experimentación con Rust",
+      category: "Desarrollo de Sistemas",
+      description: "Proyectos de práctica para dominar Rust enfocados en seguridad, rendimiento y concurrencia, incluyendo manipulacion de archivos y servicios de red.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+      technologies: ["Rust", "Cargo", "Tokio", "Serde", "Actix-web", "Linux"],
+      icon: Smartphone,
+      color: "from-indigo-500 to-blue-500",
+      highlights: [
+        "Sintaxis segura y libre de errores comunes",
+        "Compilación a binarios nativos eficientes",
+        "Experimentación con concurrencia segura"
       ],
       github: "#",
       demo: "#"

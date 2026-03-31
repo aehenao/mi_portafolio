@@ -4,81 +4,73 @@ import { Brain, Code2, Database, Cloud, Smartphone, Layers } from "lucide-react"
 export function Skills() {
   const skillCategories = [
     {
-      category: "Inteligencia Artificial & ML",
+      category: "Inteligencia Artificial & Automatización",
       icon: Brain,
       color: "from-indigo-500 to-blue-500",
       skills: [
-        { name: "TensorFlow", level: 95 },
-        { name: "PyTorch", level: 90 },
-        { name: "LangChain", level: 88 },
-        { name: "OpenAI API", level: 92 },
-        { name: "Hugging Face", level: 85 },
-        { name: "scikit-learn", level: 90 }
+        { name: "Agentes IA (Dify.ai, Flowise, n8n)", level: 85 },
+        { name: "RAG y LLMs", level: 80 },
+        { name: "Machine Learning Básico", level: 75 },
+        { name: "Prompt Engineering", level: 70 }
       ]
     },
     {
-      category: "Frontend Development",
+      category: "Desarrollo Fullstack",
       icon: Code2,
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 92 },
-        { name: "Next.js", level: 88 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "Vue.js", level: 80 },
-        { name: "React Native", level: 85 }
+        { name: "PHP & Laravel", level: 90 },
+        { name: "JavaScript/TypeScript", level: 88 },
+        { name: "Node.js", level: 85 },
+        { name: "Python", level: 80 },
+        { name: "React & Vue.js", level: 82 },
+        { name: "AlpineJS", level: 75 }
       ]
     },
     {
-      category: "Backend Development",
+      category: "Bases de Datos",
       icon: Database,
       color: "from-green-500 to-emerald-500",
       skills: [
-        { name: "Node.js", level: 92 },
-        { name: "Python", level: 95 },
-        { name: "FastAPI", level: 88 },
-        { name: "GraphQL", level: 85 },
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 87 }
+        { name: "PostgreSQL", level: 85 },
+        { name: "SQL Server", level: 80 },
+        { name: "Oracle", level: 75 },
+        { name: "MongoDB", level: 70 },
+        { name: "Supabase", level: 65 }
       ]
     },
     {
-      category: "Cloud & DevOps",
+      category: "Infraestructura & DevOps",
       icon: Cloud,
       color: "from-orange-500 to-red-500",
       skills: [
-        { name: "AWS", level: 92 },
-        { name: "Docker", level: 90 },
-        { name: "Kubernetes", level: 85 },
-        { name: "CI/CD", level: 88 },
-        { name: "Terraform", level: 82 },
-        { name: "GitHub Actions", level: 87 }
+        { name: "AWS (S3, EC2, Route53)", level: 80 },
+        { name: "Docker & Contenedores", level: 75 },
+        { name: "Linux Administration", level: 70 },
+        { name: "DigitalOcean", level: 65 },
+        { name: "Proxmox Virtualización", level: 60 }
       ]
     },
     {
-      category: "Data & Analytics",
+      category: "Gestión de Proyectos",
       icon: Layers,
       color: "from-yellow-500 to-orange-500",
       skills: [
-        { name: "Apache Spark", level: 85 },
-        { name: "Kafka", level: 80 },
-        { name: "Elasticsearch", level: 82 },
-        { name: "Redis", level: 88 },
-        { name: "Pandas", level: 90 },
-        { name: "NumPy", level: 87 }
+        { name: "Análisis Funcional", level: 85 },
+        { name: "Diseño de Diagramas de Flujo", level: 80 },
+        { name: "Planificación con Gantt", level: 75 },
+        { name: "Levantamiento de Requerimientos", level: 70 },
+        { name: "Metodologías Ágiles", level: 65 }
       ]
     },
     {
-      category: "Mobile Development",
+      category: "Aprendizaje Actual",
       icon: Smartphone,
       color: "from-indigo-500 to-blue-500",
       skills: [
-        { name: "React Native", level: 85 },
-        { name: "Flutter", level: 78 },
-        { name: "iOS (Swift)", level: 75 },
-        { name: "Android (Kotlin)", level: 75 },
-        { name: "Expo", level: 82 },
-        { name: "Mobile UI/UX", level: 80 }
+        { name: "Rang (~15% progreso)", level: 15 },
+        { name: "Aprendizaje Continuo", level: 90 },
+        { name: "Resolución de Problemas", level: 85 }
       ]
     }
   ];

@@ -61,7 +61,7 @@ export function Hero() {
               className="inline-block"
             >
               <span className="px-4 py-2 bg-blue-500/20 backdrop-blur-sm border border-blue-500/30 rounded-full text-sm">
-                👋 Bienvenido a mi portafolio
+                👋 Soy Ingeniero de Software Fullstack
               </span>
             </motion.div>
 

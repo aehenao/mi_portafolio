@@ -78,7 +78,7 @@ export function Contact() {
             className="text-center mb-16"
           >
 <h2 className="text-4xl md:text-5xl font-bold mb-4">
-               Hablemos de tu <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Proyecto</span>
+               Conectemos <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Para Trabajar Juntos</span>
              </h2>
             <p className="text-xl text-gray-600">
               ¿Tienes una idea innovadora? Conectemos y hagámosla realidad
@@ -95,10 +95,9 @@ export function Contact() {
             >
               <div>
                 <h3 className="text-3xl font-bold mb-6">Información de Contacto</h3>
-                <p className="text-gray-600 mb-8">
-                  Estoy disponible para oportunidades de colaboración, consultoría técnica y 
-                  proyectos innovadores en IA y desarrollo de software.
-                </p>
+<p className="text-gray-600 mb-8">
+                   Disponible para consultoría técnica, desarrollo de proyectos fullstack y soluciones de IA aplicada al negocio.
+                 </p>
               </div>
 
               {/* Contact Cards */}
