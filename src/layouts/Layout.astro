@@ -1,4 +1,9 @@
 ---
+import '../styles/tailwind.css';
+import '../styles/fonts.css';
+import '../styles/theme.css';
+import '../styles/index.css';
+
 interface Props {
   title?: string;
   description?: string;
@@ -9,7 +14,7 @@ interface Props {
 const {
   title = "Ingeniero de Software Fullstack | Portfolio Profesional",
   description = "Ingeniero de Software Fullstack orientado a resultados con experiencia en desarrollo fullstack, IA aplicada al negocio, automatización con Dify.ai y n8n, y liderazgo de proyectos tecnológicos. Especializado en PHP, JavaScript, Python, Node.js, Laravel, Vue.js, React y soluciones cloud en AWS y DigitalOcean.",
-  image = "/og-image.jpg",
+  image = "/foto_perfil.jpg",
   canonicalURL = Astro.url.href,
 } = Astro.props;
 
@@ -39,7 +44,7 @@ const jsonLd = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/jpeg" href={new URL("/foto_perfil.jpg", Astro.url)} />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Primary Meta Tags -->
@@ -74,12 +79,6 @@ const jsonLd = {
 
     <!-- JSON-LD -->
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-
-    <!-- Global Styles -->
-    <link rel="stylesheet" href="/src/styles/tailwind.css" />
-    <link rel="stylesheet" href="/src/styles/fonts.css" />
-    <link rel="stylesheet" href="/src/styles/theme.css" />
-    <link rel="stylesheet" href="/src/styles/index.css" />
   </head>
   <body class="bg-background text-foreground selection:bg-primary/20">
     <slot />
