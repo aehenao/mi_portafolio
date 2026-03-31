@@ -19,12 +19,12 @@ export function Skills() {
       icon: Code2,
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "PHP & Laravel", level: 90 },
-        { name: "JavaScript/TypeScript", level: 88 },
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "React & Vue.js", level: 82 },
-        { name: "AlpineJS", level: 75 }
+        { name: "PHP & Laravel", level: 70 },
+        { name: "JavaScript/TypeScript", level: 95 },
+        { name: "Node.js", level: 95 },
+        { name: "Python", level: 90 },
+        { name: "React & Vue.js", level: 70 },
+        { name: "Rust", level: 15 }
       ]
     },
     {
@@ -68,9 +68,10 @@ export function Skills() {
       icon: Smartphone,
       color: "from-indigo-500 to-blue-500",
       skills: [
-        { name: "Rang (~15% progreso)", level: 15 },
-        { name: "Aprendizaje Continuo", level: 90 },
-        { name: "Resolución de Problemas", level: 85 }
+        { name: "Rust", level: 15 },
+        { name: "LangGraph & LangChain", level: 60 },
+        { name: "FlutterFlow", level: 60 },
+        { name: "Resolución de Problemas", level: 100 }
       ]
     }
   ];

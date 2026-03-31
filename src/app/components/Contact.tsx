@@ -1,8 +1,9 @@
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 export function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,9 +13,22 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock form submission
-    alert("¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsSubmitting(true);
+
+    const phoneNumber = "573194077980";
+    const text = `Hola Andres, mi nombre es *${formData.name}*.\n\n` +
+                 `*Asunto:* ${formData.subject}\n` +
+                 `*Mensaje:* ${formData.message}\n\n` +
+                 `*Mi correo es:* ${formData.email}`;
+
+    const encodedText = encodeURIComponent(text);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+    // Small delay for UX feedback
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+      setIsSubmitting(false);
+    }, 800);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -28,19 +42,19 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "tu.email@ejemplo.com",
-      href: "mailto:tu.email@ejemplo.com"
+      value: "andrestivenhenao@gmail.com",
+      href: "mailto:andrestivenhenao@gmail.com"
     },
     {
       icon: Phone,
       label: "Teléfono",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+57 3194077980",
+      href: "https://wa.me/573194077980"
     },
     {
       icon: MapPin,
       label: "Ubicación",
-      value: "San Francisco, CA",
+      value: "Cali, Valle del Cauca",
       href: "#"
     }
   ];
@@ -49,21 +63,21 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/aehenao",
       color: "hover:text-gray-900"
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      href: "https://linkedin.com",
-      color: "hover:text-blue-600"
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com",
-      color: "hover:text-blue-400"
     }
+    // {
+    //   icon: Linkedin,
+    //   label: "LinkedIn",
+    //   href: "https://linkedin.com",
+    //   color: "hover:text-blue-600"
+    // },
+    // {
+    //   icon: Twitter,
+    //   label: "Twitter",
+    //   href: "https://twitter.com",
+    //   color: "hover:text-blue-400"
+    // }
   ];
 
   return (
@@ -167,9 +181,9 @@ export function Contact() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <form onSubmit={handleSubmit} className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
+              <form onSubmit={handleSubmit} className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg relative overflow-hidden">
                 <h3 className="text-2xl font-bold mb-6">Envíame un Mensaje</h3>
-                
+
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold mb-2">
@@ -182,7 +196,7 @@ export function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
                       placeholder="Tu nombre"
                     />
                   </div>
@@ -198,7 +212,7 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
                       placeholder="tu@email.com"
                     />
                   </div>
@@ -214,7 +228,7 @@ export function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
                       placeholder="¿De qué quieres hablar?"
                     />
                   </div>
@@ -230,19 +244,33 @@ export function Contact() {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all resize-none"
                       placeholder="Cuéntame sobre tu proyecto o idea..."
                     />
                   </div>
 
                   <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                    disabled={isSubmitting}
+                    whileHover={!isSubmitting ? { scale: 1.02 } : {}}
+                    whileTap={!isSubmitting ? { scale: 0.98 } : {}}
                     type="submit"
-                    className="w-full px-6 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-purple-500/50 transition-shadow flex items-center justify-center gap-2"
+                    className={`w-full px-6 py-4 font-semibold rounded-lg shadow-lg transition-all flex items-center justify-center gap-2 ${
+                      isSubmitting
+                        ? "bg-gray-400 cursor-not-allowed"
+                        : "bg-gradient-to-r from-green-600 to-green-500 text-white hover:shadow-green-500/50"
+                    }`}
                   >
-                    <Send className="w-5 h-5" />
-                    Enviar Mensaje
+                    {isSubmitting ? (
+                      <span className="flex items-center gap-2">
+                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                        Abriendo WhatsApp...
+                      </span>
+                    ) : (
+                      <>
+                        <MessageCircle className="w-5 h-5" />
+                        Enviar por WhatsApp
+                      </>
+                    )}
                   </motion.button>
                 </div>
               </form>

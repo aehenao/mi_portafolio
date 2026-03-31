@@ -67,16 +67,15 @@ export function Hero() {
 
             <h1 className="text-5xl md:text-7xl font-bold">
               <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">
-                Desarrollador
+                Director IT
               </span>
               <br />
-              <span className="text-white">& CTO</span>
+              <span className="text-white">& Desarrollador</span>
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed">
-              Director de Tecnología y Desarrollador de Software especializado en{" "}
-              <span className="text-purple-400 font-semibold">Inteligencia Artificial</span>,
-              creando soluciones innovadoras que transforman negocios.
+              Director de Tecnología y Desarrollador Fullstack con más de 4 años de experiencia liderando proyectos y especializándome en{" "}
+              <span className="text-purple-400 font-semibold">Inteligencia Artificial</span> y automatización de procesos empresariales.
             </p>
 
             <div className="flex gap-4 pt-4">

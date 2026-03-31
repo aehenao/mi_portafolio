@@ -4,49 +4,75 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 export function Experience() {
   const experiences = [
     {
-      role: "Ingeniero de Software Senior / Líder Técnico",
-      company: "Freelance / Consultoría Independiente",
-      period: "2022 - Presente",
-      location: "Remoto",
-      description: "Liderazgo de proyectos tecnológicos fullstack, desarrollo de soluciones escalables y optimización de procesos empresariales mediante IA y automatización.",
+      role: "Director IT",
+      company: "Valley groups",
+      period: "Abril 2023 - Febrero 2025",
+      location: "Cali",
+      description: "Liderazgo estratégico y supervisión de proyectos tecnológicos enfocados en optimizar procesos empresariales y generar ventajas competitivas.",
       achievements: [
-        "Desarrollo de aplicaciones robustas con PHP, JavaScript, Python y Node.js",
-        "Implementación de arquitecturas cloud en AWS y DigitalOcean",
-        "Creación de agentes inteligentes con Dify.ai, Flowise y n8n",
-        "Integración de soluciones RAG con Pinecone y Supabase",
-        "Optimización de procesos empresariales mediante automatización e IA"
+        "Coordinación de equipos multidisciplinarios de desarrollo, infraestructura y análisis.",
+        "Definición de arquitecturas tecnológicas y selección de stack (AWS, DigitalOcean, Proxmox, Docker).",
+        "Impulso de prácticas de automatización e integración continua (CI/CD) para mejorar la eficiencia.",
+        "Promoción del uso de IA y agentes inteligentes para optimizar procesos internos y toma de decisiones.",
+        "Gestión integral de requerimientos, priorización de iniciativas y comunicación con stakeholders."
       ],
-      technologies: ["PHP", "JavaScript", "Python", "Node.js", "Laravel", "Vue.js", "React", "AlpineJS", "AWS", "Docker", "PostgreSQL", "Supabase", "Pinecone", "Dify.ai", "Flowise", "n8n"]
+      technologies: ["AWS", "DigitalOcean", "Proxmox", "Docker", "Linux", "IA", "CI/CD", "Automatización"]
     },
     {
-      role: "Desarrollador Fullstack",
-      company: "Proyectos Independientes y Colaboraciones",
-      period: "2019 - 2022",
-      location: "Remoto",
-      description: "Desarrollo de aplicaciones web y móviles robustas, intuitivas y de alto rendimiento con enfoque en experiencia de usuario y performance.",
+      role: "Desarrollador de Software",
+      company: "Klaxen sas",
+      period: "Octubre 2020 - Actualidad",
+      location: "Yumbo",
+      description: "Desarrollo e implementación de software para la automatización y optimización de procesos internos y externos.",
       achievements: [
-        "Diseño y desarrollo de aplicaciones con Laravel, Vue.js y React",
-        "Levantamiento de requerimientos y análisis funcional detallado",
-        "Creación de diagramas de flujo y mockups para planificación de proyectos",
-        "Implementación de pruebas unitarias y de integración",
-        "Despliegue en servidores Linux y contenedores Docker"
+        "Desarrollo de soluciones con PHP, JavaScript, Laravel, Python, React y Vue.",
+        "Administración de servidores Windows (Active Directory) y entornos cloud (AWS, DigitalOcean, Kamatera).",
+        "Integración de software de terceros como Zoho CRM, CGUNO y Drive API para backups automáticos.",
+        "Soporte y mantenimiento a plataformas basadas en CMS como Joomla y Wordpress."
       ],
-      technologies: ["PHP", "Laravel", "Vue.js", "React", "JavaScript", "MySQL", "PostgreSQL", "Docker", "Linux", "Git"]
+      technologies: ["PHP", "JavaScript", "Laravel", "Python", "React", "Vue", "AWS", "DigitalOcean", "Kamatera", "Zoho CRM", "Joomla", "Wordpress"]
     },
     {
-      role: "Analista y Desarrollador de Sistemas",
-      company: "Desarrollo de Proyectos Académicos y Personales",
-      period: "2017 - 2019",
-      location: "Remoto",
-      description: "Formación integral en desarrollo de software, algoritmos y arquitectura de sistemas mediante proyectos autodidactas y colaborativos.",
+      role: "Desarrollador de Software Freelancer",
+      company: "Freelancer.com.co",
+      period: "Enero 2020 - Actualidad",
+      location: "Cali",
+      description: "Asesoramiento técnico y desarrollo de plataformas a medida, especializado en optimización de procesos y soluciones de IA.",
       achievements: [
-        "Desarrollo de aplicaciones de escritorio y web con Java y Python",
-        "Implementación de bases de datos relacionales con SQL Server y Oracle",
-        "Creación de herramientas de automatización y procesamiento de datos",
-        "Aprendizaje de metodologías ágiles y Scrum",
-        "Desarrollo de habilidades en resolución de problemas y análisis lógico"
+        "Desarrollo de bots de scraping y chatbots conversacionales con Wait.io y DialogFlow.",
+        "Implementación de soluciones avanzadas con IA, RAG y agentes inteligentes (Dify.ai, n8n, Flowise).",
+        "Uso de tecnologías de vanguardia como LangChain, LangGraph y Rust para proyectos específicos.",
+        "Consultoría técnica para empresas nacionales e internacionales con excelentes calificaciones."
       ],
-      technologies: ["Java", "Python", "SQL Server", "Oracle", "HTML", "CSS", "JavaScript", "Linux"]
+      technologies: ["Node.js", "React", "Laravel", "Python", "IA", "RAG", "Rust", "Dify.ai", "n8n", "Flowise", "LangChain", "Metabase"]
+    },
+    {
+      role: "Gestor de Acceso",
+      company: "Universidad Autónoma de Occidente",
+      period: "Enero 2017 - Actualidad",
+      location: "Cali",
+      description: "Administración de infraestructura de identidad, acceso y seguridad de la información corporativa.",
+      achievements: [
+        "Administración de Active Directory, GPO y plataforma de correo Gmail para empresas.",
+        "Gestión de seguridad endpoint con Kaspersky y administración de servidores Windows/Linux.",
+        "Desarrollo de Dashboard en tiempo real para visualización del estado de protección de equipos.",
+        "Automatización de procesos de depuración de AD mediante scripts avanzados en PowerShell."
+      ],
+      technologies: ["Active Directory", "PowerShell", "Linux", "Windows Server", "Kaspersky", "GPO", "Gmail API"]
+    },
+    {
+      role: "Practicante",
+      company: "Universidad Autónoma de Occidente",
+      period: "Agosto 2014 - Agosto 2015",
+      location: "Cali",
+      description: "Soporte técnico integral y mantenimiento preventivo/correctivo de infraestructura de cómputo.",
+      achievements: [
+        "Mantenimiento de computadores, recuperación de datos y backup de perfiles de usuario.",
+        "Diagnóstico de hardware e instalación/configuración de sistemas operativos.",
+        "Prueba de herramientas tecnológicas para facilitar el soporte técnico a usuarios finales.",
+        "Gestión de configuración y backups de Outlook para el personal administrativo."
+      ],
+      technologies: ["Hardware Support", "Windows", "Outlook", "Data Recovery", "Excel"]
     }
   ];
 

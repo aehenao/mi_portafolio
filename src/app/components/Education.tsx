@@ -4,14 +4,36 @@ import { GraduationCap, Award, BookOpen } from "lucide-react";
 export function Education() {
   const education = [
     {
-      degree: "Ingeniería de Sistemas",
-      institution: "Universidad Tecnológica",
-      period: "2015 - 2020",
-      description: "Formación integral en desarrollo de software, algoritmos, arquitecturas de sistemas y bases de datos.",
+      degree: "Ingeniero en desarrollo de software",
+      institution: "Politécnico Grancolombiano",
+      period: "Agosto 2021 - En curso",
+      description: "Formación avanzada en ingeniería de software, enfocada en arquitecturas modernas, gestión de proyectos y desarrollo de soluciones escalables.",
       highlights: [
-        "Graduado con honores académicos",
-        "Proyecto final: Sistema de gestión empresarial fullstack",
-        "Participación activa en competencias de programación"
+        "Enfoque en desarrollo de software de alta calidad",
+        "Estudio de arquitecturas distribuidas y cloud computing",
+        "Profundización en metodologías ágiles y gestión de ingeniería"
+      ]
+    },
+    {
+      degree: "Tecnología en sistemas de información",
+      institution: "Fundación Centro Colombiano de Estudios Profesionales",
+      period: "Febrero 2013 - Marzo 2020",
+      description: "Bases sólidas en análisis de sistemas, bases de datos y desarrollo de aplicaciones para la gestión de información empresarial.",
+      highlights: [
+        "Desarrollo de habilidades en análisis y diseño de sistemas",
+        "Implementación de bases de datos relacionales",
+        "Enfoque en soluciones tecnológicas para procesos de negocio"
+      ]
+    },
+    {
+      degree: "Bachiller técnico electrónico",
+      institution: "Institución Educativa Técnica Industrial Jose Maria Carbonell",
+      period: "Enero 2009 - Diciembre 2012",
+      description: "Formación técnica inicial con énfasis en electrónica industrial y fundamentos de sistemas.",
+      highlights: [
+        "Fundamentos de electrónica y circuitos",
+        "Primeros pasos en lógica de programación y hardware",
+        "Formación técnica industrial integral"
       ]
     }
   ];

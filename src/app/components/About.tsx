@@ -15,12 +15,12 @@ export function About() {
       description: "Experiencia con PHP, JavaScript, Python, Node.js, Laravel, Vue.js, React y AlpineJS",
       color: "from-blue-500 to-cyan-500"
     },
-    {
-      icon: Rocket,
-      title: "Liderazgo de Proyectos",
-      description: "Levantamiento de requerimientos, análisis funcional, planificación con Gantt y cronogramas",
-      color: "from-orange-500 to-red-500"
-    },
+      {
+        icon: Rocket,
+        title: "Director IT",
+        description: "Liderazgo de proyectos tecnológicos, equipos multidisciplinarios y toma de decisiones estratégicas",
+        color: "from-orange-500 to-red-500"
+      },
     {
       icon: Sparkles,
       title: "Infraestructura Cloud",
@@ -117,10 +117,10 @@ export function About() {
                    </ul>
                  </div>
 
-                <div>
-                  <h4 className="text-xl font-semibold mb-3">Tecnologías IA</h4>
+                 <div>
+                  <h4 className="text-xl font-semibold mb-3">Tecnologías IA y Automatización</h4>
                   <div className="flex flex-wrap gap-2">
-                    {['TensorFlow', 'PyTorch', 'OpenAI API', 'LangChain', 'Hugging Face', 'scikit-learn', 'Keras', 'AutoML'].map((tech) => (
+                    {['Dify.ai', 'n8n', 'Flowise', 'LangChain', 'LangGraph', 'RAG', 'DialogFlow', 'Wait.io', 'Metabase', 'OpenAI API'].map((tech) => (
                       <span
                         key={tech}
                         className="px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-sm"
