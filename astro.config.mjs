@@ -5,8 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://aehenao.github.io', // Cambia 'aehenao' por tu usuario de GitHub
-  base: 'mi_portafolio',
+  site: 'https://aehenao.github.io',
+  base: '/mi_portafolio/',
   integrations: [
     react(),
     sitemap(),
