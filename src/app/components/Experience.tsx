@@ -6,7 +6,7 @@ export function Experience() {
     {
       role: "Director IT",
       company: "Valley groups",
-      period: "Abril 2023 - Febrero 2025",
+      period: "Abril 2023 - Febrero 2026",
       location: "Cali",
       description: "Liderazgo estratégico y supervisión de proyectos tecnológicos enfocados en optimizar procesos empresariales y generar ventajas competitivas.",
       achievements: [
