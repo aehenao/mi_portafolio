@@ -21,7 +21,7 @@ export function Experience() {
     {
       role: "Desarrollador de Software",
       company: "Klaxen sas",
-      period: "Octubre 2020 - Actualidad",
+      period: "Octubre 2020 - Marzo 2023",
       location: "Yumbo",
       description: "Desarrollo e implementación de software para la automatización y optimización de procesos internos y externos.",
       achievements: [
@@ -35,7 +35,7 @@ export function Experience() {
     {
       role: "Desarrollador de Software Freelancer",
       company: "Freelancer.com.co",
-      period: "Enero 2020 - Actualidad",
+      period: "Enero 2020 - Febrero 2025",
       location: "Cali",
       description: "Asesoramiento técnico y desarrollo de plataformas a medida, especializado en optimización de procesos y soluciones de IA.",
       achievements: [
@@ -49,7 +49,7 @@ export function Experience() {
     {
       role: "Gestor de Acceso",
       company: "Universidad Autónoma de Occidente",
-      period: "Enero 2017 - Actualidad",
+      period: "Enero 2016 - Octubre 2020",
       location: "Cali",
       description: "Administración de infraestructura de identidad, acceso y seguridad de la información corporativa.",
       achievements: [
